@@ -1,0 +1,44 @@
+{
+  "name": "@code-with-sifat/zod-bhasha",
+  "version": "0.1.0",
+  "description": "Zod error messages with i18n (EN + BN out of the box).",
+  "keywords": [
+    "zod",
+    "i18n",
+    "validation",
+    "typescript",
+    "bangla",
+    "bn"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "peerDependencies": {
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
