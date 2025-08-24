@@ -1,21 +1,17 @@
 export type LocaleCode = "en" | "bn" | "es" | "ru" | "jp" | "ko" | "ar" | "cn" | "in";
 
 export type MessageTemplates = {
-  // keys roughly map to ZodIssueCode buckets
+  // keys map to ZodIssueCode buckets in Zod v4
   invalid_type: string;        // {expected} {received}
-  invalid_literal: string;     // {expected} {received}
+  invalid_format: string;      // {format} {validation}
   invalid_union: string;
-  invalid_union_discriminator: string; // {options}
-  invalid_enum_value: string;  // {options} {received}
-  invalid_arguments: string;
-  invalid_return_type: string;
-  invalid_date: string;
-  invalid_string: string;      // {validation}
-  too_small: string;           // {minimum} {inclusive} {type} {exact?}
-  too_big: string;             // {maximum} {inclusive} {type} {exact?}
-  invalid_intersection_types: string;
-  not_multiple_of: string;     // {multipleOf}
-  not_finite: string;
+  invalid_value: string;       // {options} {received}
+  unrecognized_keys: string;   // {keys}
+  invalid_key: string;
+  invalid_element: string;
+  too_small: string;           // {minimum} {inclusive} {origin} {exact?}
+  too_big: string;             // {maximum} {inclusive} {origin} {exact?}
+  not_multiple_of: string;     // {divisor}
   custom: string;              // generic fallback
 };
 
