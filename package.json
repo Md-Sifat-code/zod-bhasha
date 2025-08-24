@@ -1,5 +1,5 @@
 {
-  "name": "@code-with-sifat/zod-bhasha",
+  "name": "@sifat046/zod-bhasha",
   "version": "0.1.0",
   "description": "Zod error messages with i18n (EN + BN out of the box).",
   "keywords": [
@@ -17,9 +17,9 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     }
   },
   "files": [
