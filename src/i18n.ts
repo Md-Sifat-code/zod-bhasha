@@ -1,4 +1,4 @@
-export type LocaleCode = "en" | "bn";
+export type LocaleCode = "en" | "bn" | "es" | "ru" | "jp" | "ko" | "ar" | "cn" | "in";
 
 export type MessageTemplates = {
   // keys roughly map to ZodIssueCode buckets
